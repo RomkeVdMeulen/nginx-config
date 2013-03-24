@@ -27,7 +27,7 @@ Add a server config file to `sites-available` (e.g. `sites-available/com.example
 
 Use the global config files defined in `/global` to add extra functions on the server. 
 But when you do, read the included config file: there may be additional instructions in the comments.
-E.g.: when including `/global/php-fcgi.conf` you may need to edit `/etc/php5/fpm/php.ini`.
+E.g.: when including `global/php-fcgi.conf` you may need to edit `/etc/php5/fpm/php.ini`.
 
 Example site config:
 ```conf
@@ -37,8 +37,7 @@ server {
   server_name hostname.com;
 
   root /path/to/server/root/;
-  autoindex on;
-
+  
   access_log  /var/log/nginx/yourhost_access.log;
   error_log   /var/log/nginx/yourhost_error.log;
 
