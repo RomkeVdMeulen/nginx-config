@@ -37,8 +37,7 @@ server {
   server_name hostname.com;
 
   root /path/to/server/root/;
-  autoindex on;
-
+  
   access_log  /var/log/nginx/yourhost_access.log;
   error_log   /var/log/nginx/yourhost_error.log;
 
