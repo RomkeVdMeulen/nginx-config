@@ -12,20 +12,16 @@ you can simply include the config for functionality you need.
 How to get started
 ------------------
 
-If you haven't already, install nginx:
+Before installing nginx, checkout this repo at `/etc/nginx/`.
+
+```bash
+sudo git clone git@github.com:RedgeOnline/nginx-config.git /etc/nginx/
+```
+
+Then install nginx:
 
 ```bash
 sudo apt-get install nginx
-```
-
-Now checkout this repo at `/etc/nginx/`.
-
-```bash
-sudo su
-cd /etc/nginx/
-git clone git@github.com:RedgeOnline/nginx-config.git .
-cd -
-exit
 ```
 
 That should do it! Now start adding websites (see below).
