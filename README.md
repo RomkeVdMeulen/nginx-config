@@ -15,7 +15,7 @@ How to get started
 Before installing nginx, checkout this repo at `/etc/nginx/`.
 
 ```bash
-sudo git clone git@github.com:RedgeOnline/nginx-config.git /etc/nginx/
+sudo git clone git://github.com/RedgeOnline/nginx-config.git /etc/nginx/
 ```
 
 Then install nginx:
@@ -45,7 +45,11 @@ sudo mkdir -p /var/run/php5-fpm/
 sudo nano /etc/php5/fpm/pool.d/www.conf
 ```
 
-Now replace `listen = 127.0.0.1:9000` with `listen = /var/run/php5-fpm/www.sock`.
+Now replace `listen = 127.0.0.1:9000` with `listen = /var/run/php5-fpm/www.sock`. Afterwards, restart the FPM:
+
+```bash
+sudo service php5-fpm restart
+```
 
 If you can't get this to work, you can settle for using port 9000, but you have to tell nginx about it. 
 To do this, edit the PHP config:
