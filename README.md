@@ -28,7 +28,7 @@ cd -
 exit
 ```
 
-That should do it!
+That should do it! Now start adding websites (see below).
 
 Using PHP
 ---------
