@@ -1,7 +1,7 @@
 Nginx pre-baked config
 ======================
 
-For those who, like me, are just getting started with nginx as an alternative webserver: 
+For those who, like me, are just getting started with [nginx](http://nginx.org/en/) as an alternative webserver: 
 here are some config files that you can use. I've tested them myself, and have gotten them working.
 Don't worry: they don't overwrite anything, so if you want, you can just remove them again later.
 
