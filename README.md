@@ -41,11 +41,10 @@ By default, the FPM will listen on port 9000 on your server, but I think it's mo
 To enable this, just edit the FPM default pool settings:
 
 ```bash
-sudo mkdir -p /var/run/php5-fpm/
 sudo nano /etc/php5/fpm/pool.d/www.conf
 ```
 
-Now replace `listen = 127.0.0.1:9000` with `listen = /var/run/php5-fpm/www.sock`. Afterwards, restart the FPM:
+Now replace `listen = 127.0.0.1:9000` with `listen = /var/run/php-fpm.sock`. Afterwards, restart the FPM:
 
 ```bash
 sudo service php5-fpm restart
