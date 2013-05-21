@@ -104,3 +104,21 @@ Once you're done, don't forget to have nginx load the new configuration:
 ```bash
 sudo service nginx reload
 ```
+
+Securing a website with a password
+----------------------------------
+
+One of the simplest ways to restrict access to one of your websites is to use basic HTTP authentication.
+To do this, you must first generate a htpasswd file containing the usernames and passwords of people who have access to the website.
+This file will contain the usernames in plain text and the password encrypted with Crypt.
+
+Using Ruby, we can generate a new htpasswd file like this:
+```bash
+ruby -le 'print "your-username: #{%Q{your password}.crypt(%Q{salt})}"' > /path/to/your/website/root/.htpasswd
+```
+
+Once your htpasswd file is set up, add the necessary config to your website's nginx config file:
+```
+auth_basic            "This website is restricted!";
+auth_basic_user_file  /path/to/your/website/root/.htpasswd;
+```
