@@ -63,7 +63,12 @@ Adding a website
 ----------------
 
 Add a server config file to `/etc/nginx/sites-available` (e.g. `/etc/nginx/sites-available/com.example.www`). 
-To enable the site, link to the config file in `/etc/nginx/sites-enabled`.
+To enable the site, link to the config file in `/etc/nginx/sites-enabled`. If these directories don't exist yet,
+create them and add this to `/etc/nginx/nginx.conf` (after `include /etc/nginx/conf.d/*.conf`):
+
+```conf
+    include /etc/nginx/sites-enabled/*;
+```
 
 Use the config files defined in `/etc/nginx/global` to add extra functions to your website. 
 But when you do, be sure to read the config file you're including: there may be additional instructions in the comments.
@@ -77,7 +82,7 @@ server {
   listen 127.0.0.1:80;
 
   # Replace this with your website's URL (minus the http://)
-  server_name hostname.com;
+  server_name hostname.com www.hostname.com;
 
   # Where are the files to use for the website located?
   root /path/to/server/root/;
