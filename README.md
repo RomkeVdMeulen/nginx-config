@@ -78,8 +78,7 @@ Example site config:
 ```conf
 server {
   # Listen on the default HTTP port (80)
-  # Change 127.0.0.1 for your server's IP address
-  listen 127.0.0.1:80;
+  listen 80;
 
   # Replace this with your website's URL (minus the http://)
   server_name hostname.com www.hostname.com;
