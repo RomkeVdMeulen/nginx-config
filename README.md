@@ -15,7 +15,7 @@ How to get started
 Before installing nginx, checkout this repo at `/etc/nginx/`.
 
 ```bash
-sudo git clone git://github.com/RedgeOnline/nginx-config.git /etc/nginx/
+sudo git clone https://github.com/RomkeVdMeulen/nginx-config.git /etc/nginx/
 ```
 
 Then install nginx:
