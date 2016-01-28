@@ -12,6 +12,8 @@ you can simply include the config for functionality you need.
 How to get started
 ------------------
 
+Here are instructions for using these config files on Ubuntu.
+
 Before installing nginx, checkout this repo at `/etc/nginx/`.
 
 ```bash
