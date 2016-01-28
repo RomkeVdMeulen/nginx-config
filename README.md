@@ -1,6 +1,8 @@
 Nginx pre-baked config
 ======================
 
+_Note: this project was created two years ago and hasn't been updated since. It may be out of date. Use with caution._
+
 For those who, like me, are just getting started with [nginx](http://nginx.org/en/) as an alternative webserver: 
 here are some config files that you can use. I've tested them myself, and have gotten them working.
 Don't worry: they don't overwrite anything, so if you want, you can just remove them again later.
